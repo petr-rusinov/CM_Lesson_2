@@ -41,13 +41,14 @@ void task_1()
 // сортирует указатели по значениям, на которые они указывают.
 //-------------------------------------------------------------------------------------------------
 
-
+// SortPointers, вариант 1 на базе std::sort
 template <class T> void SortPointers(vector<T*>& vec)
 {
 
     sort(vec.begin(), vec.end(), [](T* a, T* b) { return (*a < *b); });
 }
 
+//SortPointers, вариант 2 на базе функции Swap, созданной ранее
 template <class T> void SortPointers2(vector<T*>& vec)
 {
     bool isSwapped;
