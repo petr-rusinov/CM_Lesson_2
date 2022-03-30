@@ -7,7 +7,6 @@
 
 using namespace std;
 
-
 //-------------------------------------------------------------------------------------------------
 // Подсчитайте количество гласных букв в книге “Война и мир”.Для подсчета используйте 4
 // способа:
@@ -84,6 +83,7 @@ void for_and_for(const vector<char>& book)
     timer.print();
     cout << "Vowels number: " << vowelsCount << endl;
 }
+
 void task_3()
 {
     cout << endl << "========== TASK 3 ==========" << endl << endl;
@@ -102,7 +102,6 @@ void task_3()
             book.push_back(ch);
             ++cnt;
         }
-
         cout << "Finished" << endl;
         cout << cnt << " bytes read" << endl;
 
@@ -117,9 +116,7 @@ void task_3()
 
         for_and_for(book);
 
-
         cout << "Finished" << endl;
-
     }
     else
     {
